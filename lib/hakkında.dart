@@ -23,7 +23,7 @@ class Hakkinda extends StatelessWidget {
                 SizedBox(
                   width: 350,
                   child: Text(
-                    'Bu uygulama Dr. Öğretim Üyesi Ahmet Cevahir ÇINAR tarafından yürütülen "3301456" kodlu "Mobil Programlama" dersi kapsamında "193301044" numaralı "Orhun Alp ÇEKLİ" tarafından "30/04/2021" günü yapılmıştır.',
+                    'Bu uygulama Dr. Öğretim Üyesi Ahmet Cevahir ÇINAR tarafından yürütülen "3301456" kodlu "Mobil Programlama" dersi kapsamında "193301044" numaralı "Orhun Alp ÇEKLİ" tarafından "25/06/2021" günü yapılmıştır.',
                     style: TextStyle(
                       fontSize: 25,
                       color: Colors.blue,

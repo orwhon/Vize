@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:vize/nissansky.dart';
+import 'package:vize/bmwm5.dart';
+import 'bmwi8.dart';
 
-import 'nissangtr.dart';
-
-class NissanCars extends StatefulWidget {
+class BmwCars extends StatefulWidget {
   @override
-  _NissanCarsState createState() => _NissanCarsState();
+  _BmwCarsState createState() => _BmwCarsState();
 }
 
-class _NissanCarsState extends State<NissanCars> {
+class _BmwCarsState extends State<BmwCars> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black87,
         title: Text(
-          'NİSSAN',
+          'DODGE',
           style: TextStyle(
             fontSize: 20,
             fontFamily: 'KronaOne',
@@ -30,16 +29,16 @@ class _NissanCarsState extends State<NissanCars> {
               //margin: EdgeInsets.symmetric(horizontal: 0,),
               child: FlatButton(
                 child: ListTile(
-                  leading: Image.asset('assets/images/Nissan/NissanSky.jpg'),
+                  leading: Image.asset('assets/images/BMW/Bmwi8.jpg'),
                   title: Text(
-                    'Nissan Skyline',
+                    'BMW I8 2021',
                     style: TextStyle(fontSize: 15,),
                   ),
                 ),
                 onPressed: (){Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => NissanSky()));
+                        builder: (context) => BmwI8()));
                 },
               ),
             ),
@@ -48,16 +47,16 @@ class _NissanCarsState extends State<NissanCars> {
               //margin: EdgeInsets.symmetric(horizontal: 0,),
               child: FlatButton(
                 child: ListTile(
-                  leading: Image.asset('assets/images/Nissan/Nissan1.jpg'),
+                  leading: Image.asset('assets/images/BMW/BmwM5.jpg'),
                   title: Text(
-                    'Nissan GT-R',
+                    'BMW M5 2021',
                     style: TextStyle(fontSize: 15,),
                   ),
                 ),
                 onPressed: (){Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => NissanGtr()));
+                        builder: (context) => BmwM5()));
                 },
               ),
             ),

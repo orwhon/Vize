@@ -15,7 +15,7 @@ class _ToyotaSupState extends State<ToyotaSup> {
       ),
       body: SafeArea(
         child: Column(children: [
-          Image.asset('assets/images/Toyota1.jpg',
+          Image.asset('assets/images/Toyota/Toyota1.jpg',
             height: 250,),
           Divider(height: 5,),
           Column(

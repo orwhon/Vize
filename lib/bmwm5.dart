@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class DodgeChal extends StatefulWidget {
+class BmwM5 extends StatefulWidget {
   @override
-  _DodgeChalState createState() => _DodgeChalState();
+  _BmwM5State createState() => _BmwM5State();
 }
 
-class _DodgeChalState extends State<DodgeChal> {
+class _BmwM5State extends State<BmwM5> {
   int x=0;
 
   @override
@@ -13,27 +13,27 @@ class _DodgeChalState extends State<DodgeChal> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black87,
-        title: Text("Dodge Challanger 2021"),
+        title: Text("Bmw M5 2021"),
       ),
       body: SafeArea(
         child: Column(children: [
           GestureDetector(
-            onHorizontalDragDown:(DragDownDetails details){
+            onHorizontalDragEnd:(DragEndDetails details){
               setState(() {
-                 x++;
+                x++;
               });
             },
-            child: x%2==1?Image.asset('assets/images/Dodge/Dodge1.jpg'):Image.asset('assets/images/Dodge/Dodge2.jpg',
-            height: 250,),
+            child: x%2==1?Image.asset('assets/images/BMW/Bmwi8.jpg'):Image.asset('assets/images/BMW/BmwM5.jpg',
+              height: 250,),
           ),
           Divider(height: 5),
           Column(
             children: [
               Center(child: Text('ARABA HAKKINDA BİLGİLER', style: TextStyle(fontSize: 25, color: Colors.black87,),),),
               Divider(height: 3,),
-              Text('Marka: Dodge', style: TextStyle(fontSize: 20),),
+              Text('Marka: BMW', style: TextStyle(fontSize: 20),),
               Divider(height: 3,),
-              Text('Model: Challanger', style: TextStyle(fontSize: 20),),
+              Text('Model: M5', style: TextStyle(fontSize: 20),),
               Divider(height: 3,),
               Text('İmalata Geçilme Yılı: 2021', style: TextStyle(fontSize: 20),),
               Divider(height: 3,),

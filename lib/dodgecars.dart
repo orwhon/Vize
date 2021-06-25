@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vize/dodgechal.dart';
+import 'package:vize/dodgechar.dart';
 
 class DodgeCars extends StatefulWidget {
   @override
@@ -24,11 +25,29 @@ class _DodgeCarsState extends State<DodgeCars> {
         child: Column(
           children: [
             Card(
+            color: Colors.yellow,
+            //margin: EdgeInsets.symmetric(horizontal: 0,),
+            child: FlatButton(
+              child: ListTile(
+                leading: Image.asset('assets/images/Dodge/Dodge2.jpg'),
+                title: Text(
+                  'Dodge Charger 2021',
+                  style: TextStyle(fontSize: 15,),
+                ),
+              ),
+              onPressed: (){Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MercedesAmg()));
+              },
+            ),
+          ),
+            Card(
                 color: Colors.yellow,
                 //margin: EdgeInsets.symmetric(horizontal: 0,),
                 child: FlatButton(
                   child: ListTile(
-                      leading: Image.asset('assets/images/Dodge1.jpg'),
+                      leading: Image.asset('assets/images/Dodge/Dodge1.jpg'),
                       title: Text(
                         'Dodge Challanger 2021',
                         style: TextStyle(fontSize: 15,),

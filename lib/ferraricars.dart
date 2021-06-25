@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vize/ferrarif12.dart';
+import 'package:vize/ferrarif8.dart';
 
 class FerrariCars extends StatefulWidget {
   @override
@@ -28,7 +29,25 @@ class _FerrariCarsState extends State<FerrariCars> {
               //margin: EdgeInsets.symmetric(horizontal: 0,),
               child: FlatButton(
                 child: ListTile(
-                  leading: Image.asset('assets/images/Ferrari1.jpg'),
+                  leading: Image.asset('assets/images/Ferrari/FerrariF8.jpg'),
+                  title: Text(
+                    'FERRARİ F8',
+                    style: TextStyle(fontSize: 15,),
+                  ),
+                ),
+                onPressed: (){Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => FerrariF8()));
+                },
+              ),
+            ),
+            Card(
+              color: Colors.yellow,
+              //margin: EdgeInsets.symmetric(horizontal: 0,),
+              child: FlatButton(
+                child: ListTile(
+                  leading: Image.asset('assets/images/Ferrari/Ferrari1.jpg'),
                   title: Text(
                     'FERRARİ F12',
                     style: TextStyle(fontSize: 15,),

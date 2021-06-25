@@ -15,7 +15,7 @@ class _NissanGtrState extends State<NissanGtr> {
       ),
       body: SafeArea(
         child: Column(children: [
-          Image.asset('assets/images/Nissan1.jpg',
+          Image.asset('assets/images/Nissan/Nissan1.jpg',
             height: 250,),
           Divider(height: 5,),
           Center(child: Text('ARABA HAKKINDA BİLGİLER', style: TextStyle(fontSize: 25, color: Colors.black87,),),),

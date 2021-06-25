@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:vize/nissansky.dart';
+import 'mercedesamg.dart';
+import 'mercedesg63.dart';
 
-import 'nissangtr.dart';
-
-class NissanCars extends StatefulWidget {
+class MercedesCars extends StatefulWidget {
   @override
-  _NissanCarsState createState() => _NissanCarsState();
+  _MercedesCarsState createState() => _MercedesCarsState();
 }
 
-class _NissanCarsState extends State<NissanCars> {
+class _MercedesCarsState extends State<MercedesCars> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black87,
         title: Text(
-          'NİSSAN',
+          'Mercedes-Benz',
           style: TextStyle(
             fontSize: 20,
             fontFamily: 'KronaOne',
@@ -30,16 +29,16 @@ class _NissanCarsState extends State<NissanCars> {
               //margin: EdgeInsets.symmetric(horizontal: 0,),
               child: FlatButton(
                 child: ListTile(
-                  leading: Image.asset('assets/images/Nissan/NissanSky.jpg'),
+                  leading: Image.asset('assets/images/Mercedes/MercedesAmg.jpg'),
                   title: Text(
-                    'Nissan Skyline',
+                    'Mercedes AMG 2021',
                     style: TextStyle(fontSize: 15,),
                   ),
                 ),
                 onPressed: (){Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => NissanSky()));
+                        builder: (context) => MercedesAmg()));
                 },
               ),
             ),
@@ -48,16 +47,16 @@ class _NissanCarsState extends State<NissanCars> {
               //margin: EdgeInsets.symmetric(horizontal: 0,),
               child: FlatButton(
                 child: ListTile(
-                  leading: Image.asset('assets/images/Nissan/Nissan1.jpg'),
+                  leading: Image.asset('assets/images/Mercedes/Mercedesg63.jpg'),
                   title: Text(
-                    'Nissan GT-R',
+                    'Mercedes G63 2021',
                     style: TextStyle(fontSize: 15,),
                   ),
                 ),
                 onPressed: (){Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => NissanGtr()));
+                        builder: (context) => MercedesG63()));
                 },
               ),
             ),

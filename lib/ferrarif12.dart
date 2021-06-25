@@ -15,7 +15,7 @@ class _FerrariF12State extends State<FerrariF12> {
       ),
       body: SafeArea(
         child: Column(children: [
-          Image.asset('assets/images/Ferrari1.jpg',
+          Image.asset('assets/images/Ferrari/Ferrari1.jpg',
             height: 250,),
           Divider(height: 5,),
           Column(
